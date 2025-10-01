@@ -1,0 +1,109 @@
+body {
+    background-color: #fff;
+    color: #666;
+    font-family: Verdana, Arial, sans-serif;
+    background-image: linear-gradient(#eee, #fff);
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#homehero {
+    background-image: url(homehero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+}
+
+#studenthero {
+    background-image: url(studenthero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+}
+
+#facultyhero {
+    background-image: url(facultyhero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+}
+
+header {
+    background-color: #003058;
+    color: #fff;
+    font-family: Georgia, serif;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: -2;
+}
+
+header h1 {
+    line-height: 140%;
+    padding: .5rem;
+    background-image: url(utahtechlogo.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+    padding-left: 1em;
+    margin: 0px;
+}
+
+nav {
+    font-weight: bold;
+    background-color: #f3f3f3;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: -2;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+h2 {
+    color: #424242;
+    font-family: Georgia, serif;
+}
+
+h3 {
+    color: #003058;
+}
+
+dt {
+    color: #003058;
+    font-weight: bold;
+}
+
+.ut {
+    color: #BA1C21;
+    font-weight: bold;
+}
+
+footer {
+    font-size: .70rem;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+}
+
+#wrapper {
+    display: grid;
+    grid-auto-rows: 0px auto;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0px, 175px)) minmax(0px, 1fr);
+}
+
+* {
+    box-sizing: border-box;
+}
