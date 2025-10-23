@@ -1,6 +1,6 @@
 #wrapper {
     display: grid;
-    
+
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0px, 175px)) minmax(0px, 1fr);
     border: 1px solid black;
     overflow: hidden;
@@ -12,31 +12,52 @@
 }
 
 #banner {
-    grid-area: 1 / 2 / 2 / -1;
-    background-color: rgba(0, 255, 0, 0.3);
-    justify-content: center;
-    object-fit: fill;
-    object-position: center;
+    grid-column: 1 / -1;
+    /*1, 2 -> 2, -1 */
+    object-fit: cover;
+    justify-self: center;
 }
 
 #nav-bar {
-    grid-area: 2 / 1 / -1 / 2;
-    background-color: rgba(255, 255, 0, 0.3);
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
 }
 
-#right-bar {
-    grid-area: 2 / -2 / -1 / -1;
-    background-color: rgba(166, 0, 255, 0.3);
+#nav-bar img {
+    height: auto;
+    max-width: 175px;
+}
+
+#right-sidebar {
+    grid-row: 2 / 4;
+    grid-column: 7 / 8;
     object-fit: fill;
-    object-position: left;
+    align-self: end;
 }
 
 main {
-    grid-area: 2 / 2 / -2 / -2;
-    background-color: rgba(0, 0, 255, 0.3);
+    display: flexbox;
+    flex-flow: column;
+    justify-content: space-evenly;
+    grid-row: 2;
+    grid-column: 3 / 7;
+}
+
+main section {
+    display: grid;
+    grid-template-columns: 30em 200px;
+}
+
+main section img {
+    height: 200px;
+    width: 200px;
+    object-fit: fill;
 }
 
 footer {
-    grid-area: -2 / 2 / -1 / -2;
-    background-color: rgba(255, 0, 0, 0.3);
+    grid-row: 3;
+    grid-column: 3 / 7;
+    height: 20em;
+    background-color: #23237F;
+    color: white;
 }
