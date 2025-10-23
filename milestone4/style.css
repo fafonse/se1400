@@ -1,8 +1,8 @@
 #wrapper {
     display: grid;
-
+    grid-auto-rows: minmax(50px, 100px);
+    /* fix later */
     grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0px, 175px)) minmax(0px, 1fr);
-    border: 1px solid black;
     overflow: hidden;
 }
 
@@ -55,9 +55,14 @@ main section img {
 }
 
 footer {
+    display: grid;
+    grid-template-columns: minmax(0em, 10em) 23em minmax(0em, 10em);
     grid-row: 3;
     grid-column: 3 / 7;
-    height: 20em;
     background-color: #23237F;
     color: white;
+}
+
+#owner-contact {
+    grid-column: 3 / 4;
 }
