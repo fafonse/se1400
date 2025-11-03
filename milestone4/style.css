@@ -29,17 +29,18 @@ body {
 
 #nav-bar {
     display: grid;
-    grid-template-rows: 75px 10em;
+    grid-template-rows: 75px 8em 145px;
     grid-row: 2 / 4;
     align-self: start;
     grid-column: 2 / 3;
     background-image: url('./media/left-sidebar.jpg');
     height: 1280px;
+    border-right: 1em solid black;
     /* must manually set to 90% or whatever */
 }
 
 #nav-bar img {
-    width: 150px;
+    width: 100%;
     align-self: center;
 }
 
@@ -47,17 +48,26 @@ nav {
     position: sticky;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
+    text-align: center;
     top: 0;
 }
 
+nav a {
+    background-color: white;
+    border-top: 3px solid black;
+}
+
+
 #right-sidebar {
-    width: 100%;
+    width: 175px;
     height: 1280px;
     grid-row: 2 / -2;
     grid-column: 7 / 8;
-    object-fit: fill;
+    object-fit: contain;
     display: block;
     align-self: end;
+    border-left: 1em solid black;
 }
 
 
