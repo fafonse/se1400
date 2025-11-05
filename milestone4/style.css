@@ -74,11 +74,11 @@ nav a {
 main {
     display: flex;
     flex-flow: column;
-    justify-content: space-around;
+    justify-content: space-between;
     grid-row: 2 / 3;
     grid-column: 3 / 7;
-    margin-top: 5em;
-    margin-bottom: 10em;
+    margin-top: 3em;
+    margin-bottom: 5em;
 }
 
 main section {
@@ -114,6 +114,14 @@ footer section {
     grid-column: 3 / 4;
     text-align: right;
     padding-right: 1em;
+}
+
+footer #footer-r-border {
+    border-left: 1em solid black;
+}
+
+footer #footer-l-border {
+    border-right: 1em solid black;
 }
 
 * {
