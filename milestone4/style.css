@@ -1,5 +1,14 @@
 body {
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #wrapper {
@@ -62,7 +71,7 @@ nav a {
 
 
 #right-sidebar {
-    width: 175px;
+    width: calc(175px - 1em);
     height: 1280px;
     grid-row: 2 / -2;
     grid-column: 7 / 8;
@@ -74,11 +83,11 @@ nav a {
 main {
     display: flex;
     flex-flow: column;
-    justify-content: space-around;
+    justify-content: space-between;
     grid-row: 2 / 3;
     grid-column: 3 / 7;
-    margin-top: 5em;
-    margin-bottom: 10em;
+    margin-top: 3em;
+    margin-bottom: 5em;
 }
 
 main section {
@@ -110,10 +119,30 @@ footer section {
     padding-left: 1em;
 }
 
+footer section div {
+    margin-left: 2em;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+footer a {
+    color: rgb(255, 136, 0);
+}
+
 #owner-contact {
     grid-column: 3 / 4;
     text-align: right;
     padding-right: 1em;
+}
+
+footer #footer-r-border {
+    border-left: 1em solid black;
+}
+
+footer #footer-l-border {
+    border-right: 1em solid black;
 }
 
 * {
