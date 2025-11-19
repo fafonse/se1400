@@ -51,7 +51,10 @@ p {
     align-self: start;
     grid-column: 2 / 3;
     background-image: url('./media/left-sidebar.jpg');
-    height: 1280px;
+    height: 100%;
+    width: 100%;
+    background-size: fill;
+    background-repeat: no-repeat;
     border-right: 1em solid black;
     /* must manually set to 90% or whatever */
 }
@@ -223,6 +226,7 @@ footer #footer-l-border {
 
     #right-sidebar {
         width: 0px;
+        border-style: none;
     }
 
     footer section {
@@ -236,5 +240,33 @@ footer #footer-l-border {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
+    #nav-bar {
+        display: none;
+    }
+
+    main section {
+        grid-template-rows: minmax(10em, 20em) minmax(5em, 20em);
+        grid-template-columns: minmax(10em, 20em);
+    }
+
+    main section img {
+        justify-self: center;
+        height: 75%;
+        width: 75%;
+    }
+
+    main section div {
+        word-wrap: break-word;
+        font-size: 3vw;
+    }
+
+    #nav-bar {
+        background-size: cover;
+        height: 100%;
+    }
+
+    #footer-r-border {
+        display: none;
+    }
 }
