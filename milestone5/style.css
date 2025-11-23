@@ -245,6 +245,10 @@ footer #footer-l-border {
         display: none;
     }
 
+    main {
+        grid-column: 1 / 8;
+    }
+
     main section {
         grid-template-rows: minmax(10em, 20em) minmax(5em, 20em);
         grid-template-columns: minmax(10em, 20em);
@@ -264,6 +268,7 @@ footer #footer-l-border {
     #nav-bar {
         background-size: cover;
         height: 100%;
+        display: none;
     }
 
     #footer-r-border {
