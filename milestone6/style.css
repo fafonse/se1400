@@ -36,6 +36,10 @@ p {
     border-bottom: 1em solid black;
 }
 
+iframe {
+    height: 100%;
+}
+
 
 #banner-logo {
     margin-top: 3em;
