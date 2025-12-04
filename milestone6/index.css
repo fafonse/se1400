@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('../media/pool\ water.gif');
+    background-image: url('media/pool\ water.gif');
     background-repeat: repeat;
 }
 
@@ -30,7 +30,7 @@ p {
     height: 261px;
     position: relative;
     display: inline-block;
-    background-image: url('../media/banner.png');
+    background-image: url('media/banner.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom: 1em solid black;
@@ -50,7 +50,7 @@ p {
     grid-row: 2 / 4;
     align-self: start;
     grid-column: 2 / 3;
-    background-image: url('../media/left-sidebar.jpg');
+    background-image: url('./media/left-sidebar.jpg');
     height: 100%;
     width: calc(100% - 1em);
     background-size: cover;
@@ -90,7 +90,7 @@ nav a {
     grid-column: 7 / 8;
     align-self: end;
     border-left: 1em solid black;
-    background-image: url('../media/right-sidebar.png');
+    background-image: url('media/right-sidebar.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: white;
@@ -100,14 +100,15 @@ nav a {
 main {
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     grid-row: 2 / 3;
     grid-column: 3 / 7;
     padding-top: 3em;
     padding-bottom: 5em;
+    background-color: white;
     padding-left: 1em;
     padding-right: 1em;
-    background-color: white;
+    z-index: 1;
 }
 
 
@@ -253,29 +254,6 @@ footer #footer-l-border {
     main {
         grid-column: 1 / 8;
         grid-row: 3 / 4;
-    }
-
-    main section {
-        grid-template-rows: minmax(2em, 10em) minmax(2em, 15em);
-        grid-template-columns: minmax(5em, 20em);
-        grid-gap: 7em;
-        height: auto;
-        justify-content: center;
-    }
-
-    main section img {
-        justify-self: center;
-        height: 100%;
-        width: 100%;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-
-    main section div {
-        margin-bottom: 4em;
-        flex: 1;    
-        width: display-width;  /* or whatever */
-        word-wrap: break-word;
     }
 
     #nav-bar {
